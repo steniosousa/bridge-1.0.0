@@ -15,6 +15,6 @@ app.post('/auth', async (req, res) => {
 
 })
 
-app.listen(port, () => {
+app.listen(process.env.PORT || port, () => {
     console.log('project running')
 })
